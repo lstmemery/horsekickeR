@@ -146,6 +146,12 @@ Version: 0.4.2
 Hash: b4096a4f6a6736138e9a825c2baaacf0
 Requires: pkgconfig, rlang
 
+Package: httpuv
+Source: CRAN
+Version: 1.4.5.1
+Hash: d9e43248a4355da57d5e29260e962c95
+Requires: BH, Rcpp, later, promises
+
 Package: httr
 Source: CRAN
 Version: 1.4.0
@@ -161,6 +167,12 @@ Package: jsonlite
 Source: CRAN
 Version: 1.6
 Hash: 5f969e213e966135393e3e304abf3f49
+
+Package: later
+Source: CRAN
+Version: 0.8.0
+Hash: 6628995e683466b279077e796a4f0a1c
+Requires: BH, Rcpp, rlang
 
 Package: logging
 Source: CRAN
@@ -222,6 +234,12 @@ Source: CRAN
 Version: 0.2.0
 Hash: 81a8008a5e7858552503935f1abe48aa
 
+Package: plumber
+Source: CRAN
+Version: 0.4.6
+Hash: 56b7230d3ec9bfe86c17b83af6a9b011
+Requires: R6, crayon, httpuv, jsonlite, stringi
+
 Package: praise
 Source: CRAN
 Version: 1.0.0
@@ -238,6 +256,12 @@ Source: CRAN
 Version: 3.3.0
 Hash: 89c6047da2d7dfad11bedd624252d78a
 Requires: R6, ps
+
+Package: promises
+Source: CRAN
+Version: 1.0.1
+Hash: 9bd4f07515f0bb5e649fa9a91a387ec9
+Requires: R6, Rcpp, later, magrittr, rlang
 
 Package: ps
 Source: CRAN

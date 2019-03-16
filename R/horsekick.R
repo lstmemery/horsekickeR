@@ -31,10 +31,16 @@ clean_horse_kicks <- function(horse_kick_df) {
                   .data$corps %in% prussian_corps)
 }
 
+#' Predict the Number of Horse Kicks in a Prussian Corps
+#'
+#' @param clean_kick_df A data frame generated from `clean_horse_kicks`
+#'
+#' @return A column of of predictions
+#' @export
 predict_horse_kicks <- function(clean_kick_df) {
   model <- readRDS(
     system.file("extdata", "horse_kick_glm.0.1.0.rds",
-                package = "horsekickR"),
+                package = "horsekickeR")
   )
 
   predict(model, clean_kick_df)
