@@ -3,7 +3,7 @@ Title: A Production-Grade R Package to Predict Prussian Horse Kick Deaths
 Version: 0.1.0
 Authors@R: person("Matthew", "Emery", email = "me@matthewemery.ca", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
-Depends: R (>= 3.5.3)
+Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

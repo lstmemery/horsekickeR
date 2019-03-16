@@ -1,11 +1,11 @@
 FROM trestletech/plumber
 MAINTAINER Matthew Emery <me@matthewemery.ca>
 
-RUN R -e "install.packages(c('devtools'), repos = 'http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('devtools', 'packrat'), repos = 'http://cran.us.r-project.org')"
 
-ADD ./horsekickeR ~/horsekickeR
+ADD ./horsekickeR /home/user/horsekickeR
 
-WORKDIR ~/horsekickeR
+WORKDIR /home/user/horsekickeR
 
 RUN R -e 'devtools::install_deps(dependencies = TRUE, upgrade = "never")'
 
